@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/whatsappbg"
+    tools:context="technologies.d.digital.whatsappdirect.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="10dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/cvbg"
+        android:id="@+id/cardView">
+
+
+        <com.rilixtech.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ccp"
+            app:ccp_keyboardAutoPopOnSearch="true"
+            app:ccp_showFullName="true"
+            app:ccp_textColor="@color/white"
+            android:layout_height="wrap_content">
+
+        </com.rilixtech.CountryCodePicker>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/phone_number_edit"
+            android:hint="Enter Phone Number"
+            android:textColorHint="@color/whitelight"
+            android:textColor="@color/white"
+            android:inputType="phone"
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <Button
+            android:id="@+id/buttonclr"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="249dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"/>
+
+        <Button
+            android:id="@+id/buttoncalllog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:drawable/ic_menu_call"/>
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="140dp"
+            android:hint="Type Your Message Here..!"
+            android:textColorHint="@color/whitelight"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsend"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="After a Click on SEND ,Pick WhatsApp from below..!" />
+
+
+</RelativeLayout>
